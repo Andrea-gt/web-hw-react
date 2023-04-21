@@ -1,0 +1,35 @@
+.cardGridContainer {
+  display: grid;
+  justify-content: center;
+  width: 600px;
+  margin:auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: start;
+  justify-items: center;
+  align-self: center;
+}
+
+.cardDiv{
+  align-items: center;
+}
+
+.cardDiv img {
+  height: 120px;
+  width: 120px;
+  border: 20px solid #22223b;
+  transition: all 0.6s;
+  transform-style: preserve-3d;
+}
+  
+.cardDiv img.card-front {
+  backface-visibility: visible;
+  transform: rotateY(0deg);
+}
+  
+.cardDiv img.card-back {
+  transform: rotateY(180deg);
+}
+
+
+
