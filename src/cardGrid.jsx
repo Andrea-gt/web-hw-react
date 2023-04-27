@@ -1,5 +1,5 @@
 import React from 'react';
-import './CardGrid.css';
+import './cardGrid.css';
 
 const CardGrid = ({ cardArray, handleClick }) => {
   return (
